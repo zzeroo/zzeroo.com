@@ -1,0 +1,52 @@
+I hereby claim:
+
+  * I am an admin of https://zzeroo.com
+  * I am zzeroo (https://keybase.io/zzeroo) on keybase.
+  * I have a public key ASALy6kT3iwcgj3Y8Z0D1SygahKj5-odwVyve3SiC1W8Zgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01200bcba913de2c1c823dd8f19d03d52ca06a12a3e7ea1dc15caf7b74a20b55bc660a",
+      "host": "keybase.io",
+      "kid": "01200bcba913de2c1c823dd8f19d03d52ca06a12a3e7ea1dc15caf7b74a20b55bc660a",
+      "uid": "2e63b2b7e3f312bd5bdecdb22b8b1319",
+      "username": "zzeroo"
+    },
+    "merkle_root": {
+      "ctime": 1574349051,
+      "hash": "fb2f4be7227f886d8053f362b4a26b10d42bb255481f704b703245e4ff2ce984f1f99028fdd1e469575a7b56061b709336531f3e033b9f65ed8ec3dfc5707cb7",
+      "hash_meta": "2787f2794d287e7133e35f4e18165c7bd2d6c44a2cb7f3090eb728ebf4a581e2",
+      "seqno": 10424885
+    },
+    "service": {
+      "entropy": "ejkHq2HJkGSiGQZPnW+cWg+y",
+      "hostname": "zzeroo.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.0.0"
+  },
+  "ctime": 1574349060,
+  "expire_in": 504576000,
+  "prev": "2d9f50c5c1337e802b9eed46183dc488a66c21a8bc6d76cffa83dbc482edeb74",
+  "seqno": 17,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgC8upE94sHII92PGdA9UsoGoSo+fqHcFcr3t0ogtVvGYKp3BheWxvYWTESpcCEcQgLZ9QxcEzfoArnu1GGD3EiKZsIai8bXbP+oPbxILt63TEIIVFpQfy+ocv5JmHA2jbeHImqtaepXtubGK2GXFBxCxgAgHCo3NpZ8RA6XaZ9GMkgohbxlS1iEhHB1PZ+umPQgEWvjwmnqLOzzI/jEM5JJL1T7IBt8SO8+/a7IWMdhhn/PNRYxKwEauoD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIP5Hm92ceFn7tw1+Z7Z+WahPVM4TSHWkbgUAIglY/j+go3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/zzeroo
+
+==================================================================
