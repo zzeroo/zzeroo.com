@@ -1,5 +1,13 @@
-<h1>{{section.title}}</h1>
+{% extends "index.html" %}
+{% block title %}{{ section.title }}{% endblock title %}
+{% block head %}
+    {{ super() }}
+{% endblock head %}
 
-<pre>
-{{ __tera_context }}
-</pre>
+{% block content %}
+{% if section.title %}<h1 class="title" itemprop="headline">{{ section.title }}</h1>{% endif %}
+{% endblock content %}
+
+{% block footer_column_left %}
+  {{ super() }}
+{% endblock footer_column_left %}

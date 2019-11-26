@@ -1,7 +1,118 @@
-{% extends "base.html" %}
-{% block title %}Index{% endblock title %}
-{% block head %}
-    {{ super() }}
-{% endblock head %}
-{% block content %}
-{% endblock content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Copyright Stefan Müller-->
+<!--Legal Information at https://www.zzeroo.com/contact-->
+
+<head>
+  {% block head %}
+  <meta charset="utf-8">
+  <title>{% block title %}{% endblock title %} - {{ config.title }}</title>
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Homepage von 'Stefan Müller - Hard.- und Software Entwicklung'">
+  <meta name="keywords" content="Stefan, Müller, Stefan Müller, zzeroo, oorezz">
+  <meta name="author" content="Stefan Müller">
+  <meta name="generator" content="github.com/zzeroo/zzeroo.com">
+  <link href="/main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">
+  {% endblock head %}
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <ul>
+        <li class="navlogo">
+          <a href="/"><img src="/images/logo-zzeroo.svg" width="51px" height="51px"></a>
+        </li>
+        <li style="padding-top:0.4em;">
+          <a href="/"><img class=".exempt" width="18px" src="/images/fontawesome/home.svg"> <span>Home</span></a>
+        </li>
+        <li>
+          <a href="/imprint"><img class=".exempt" width="18px" src="/images/fontawesome/file-contract.svg"> <span>Impressum</span></a>
+        </li>
+        <li>
+          <a href="/projects"><img class=".exempt" width="18px" src="/images/fontawesome/file-contract.svg"> <span>Projekte</span></a>
+        </li>
+        {% if config.generate_rss %}
+        <li class="float-right">
+          <a href="/rss.xml"><img class=".exempt" width="18px" src="/images/fontawesome/rss.svg"> <span>RSS Feed</span></a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+  <div class="body">
+    <div class="content">
+      {% block content %}
+        {% if section.title %}<h1 class="title" itemprop="headline">{{ section.title }}</h1>{% endif %}
+        {% if section.content %}{{ section.content | safe }}{% endif %}
+      {% endblock content %}
+    </div>
+  </div>
+  <div class="footer">
+    <footer>
+      <div class="footer-column">
+        <h2><img class=".exempt" width="24px" src="/images/logo-zzeroo-flame.svg"> Stefan Müller</h2>
+        {% block footer_column_left %}
+        <h4 class="float-left">
+          <a href="/imprint"><img class=".exempt" width="18px" src="/images/fontawesome/file-contract.svg"> <span>Impressum</span></a>
+          &nbsp;|&nbsp;
+        </h4>
+        <h4 class="float-left">
+          <a href="/projects"><img class=".exempt" width="18px" src="/images/fontawesome/file-contract.svg"> <span>Projekte</span></a>
+        </h4>
+        {% endblock footer_column_left %}
+        <p class="margin-top--8 font-size-smaller">&copy;1978-2020&nbsp;by&nbsp;Stefan M&uuml;ller&nbsp;&lt;zzeroo&gt;<p>
+      </div>
+      <div class="footer-column footer-middle">
+        <h2>&#x1f517; Links</h2>
+        <a href="https://github.com/zzeroo" target="_blank" rel="noopener">
+          <div class="footer-item">
+            <img class=".exempt" width="18px" src="/images/fontawesome/github.svg">
+            &nbsp;
+            <h4>Github</h4>
+          </div>
+        </a>
+        <a href="https://keybase.io/zzeroo" target="_blank" rel="noopener">
+          <div class="footer-item">
+            <img class=".exempt" width="18px" src="/images/fontawesome/keybase.svg">
+            &nbsp;
+            <h4>Keybase</h4>
+          </div>
+        </a>
+        <a href="pgp.txt" target="_blank" rel="noopener">
+          <div class="footer-item">
+            <img class="exempt" width="18px" src="/images/fontawesome/key.svg">
+            &nbsp;
+            <h4>PGP Key</h4>
+          </div>
+        </a>
+      </div>
+      <div class="footer-column">
+        {% if config.generate_rss %}
+        <h2><img class=".exempt" width="24px" src="/images/fontawesome/bell.svg"> Subscribe</h2>
+        <a href="/rss.xml" target="_blank">
+          <div class="footer-item">
+            <img class=".exempt" width="18px" src="/images/fontawesome/rss.svg">
+            <h4>RSS Feed</h4>
+          </div>
+        </a>
+        {% endif %}
+        <p class="">
+          Es werden keinerlei Nutzerdaten ausgewertet. Auf Techniken wie Cookies,
+          User Tracking und Logauswertungen verzichte ich komplett.
+        </p>
+
+        <p class="">
+          Diese Webseite verzichtet zu 100% auf Javascript.
+        </p>
+      </div>
+      <div class="footer flex-justify-center">
+        <p class="margin-top--8 font-size-smaller color-grey">
+          :wq
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,5 +1,7 @@
 +++
-title = "Index"
+title = "Stefan Müller - Hard.- und Software Entwicklung"
 +++
 
-# Hello U
+Mein Name ist Stefan Müller.
+
+Ich bin Embedded Systems Programmierer, Rust, Ruby Fanatiker.

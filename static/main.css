@@ -284,3 +284,11 @@ img.invert {/* svg on an img tag */
 .font-size-smaller {
   font-size: smaller;
 }
+
+.color-grey {
+  color: #999999;
+}
+
+.margin-top--8 {
+  margin-top: 8px;
+}
