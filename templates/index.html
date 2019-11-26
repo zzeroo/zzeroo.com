@@ -1,66 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<!--Copyright Stefan Müller-->
-<!--Legal Information at https://www.zzeroo.com/contact-->
-
-<head>
-  {% block head %}
-  <meta charset="utf-8">
-  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-  <meta name="description" content="Homepage von 'Stefan Müller - Hard.- und Software Entwicklung'">
-  <meta name="keywords" content="Stefan, Müller, Stefan Müller, zzeroo, oorezz">
-  <meta name="author" content="Stefan Müller">
-  <meta name="generator" content="github.com/zzeroo/zzeroo.com">
-  <link href="/main.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width">
-  {% endblock head %}
-</head>
-<body>
-  <div class="navbar">
-    <ul>
-      <li class="navlogo">
-        <a href="/"><img src="/images/logo.svg" width="51px" height="51px"></a>
-      </li>
-    </ul>
-  </div>
-  <div class="body">
-    <div class="content">
-      <!-- <pre>
-      {{ __tera_context }}
-      </pre> -->
-    </div>
-  </div>
-  <div class="footer">
-    <footer>
-      <div class="footer-column">
-      </div>
-      <div class="footer-column footer-middle">
-        <h2>Links</h2>
-        <a href="https://keybase.io/zzeroo" target="_blank" rel="noopener">
-          <div class="footer-item">
-            <img class="invert .exempt" width="18px" src="/images/keybase.svg">
-            &nbsp;
-            <h4>Keybase</h4>
-          </div>
-        </a>
-        <a href="pgp.txt" target="_blank" rel="noopener">
-          <div class="footer-item">
-            <img class="invert exempt" width="18px" src="/images/key.svg">
-            &nbsp;
-            <h4>PGP Key</h4>
-          </div>
-        </a>
-      </div>
-      <div class="footer-column">
-      </div>
-      <div class="footer flex-justify-center">
-        <p class="margin-top--8 font-size-smaller color-grey">
-          &copy;1978-2020&nbsp;Stefan M&uuml;ller&nbsp;&lt;zzeroo&gt;
-        </p>
-      </div>
-    </footer>
-  </div>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Index{% endblock title %}
+{% block head %}
+    {{ super() }}
+{% endblock head %}
+{% block content %}
+{% endblock content %}
