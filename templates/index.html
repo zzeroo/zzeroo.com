@@ -5,14 +5,17 @@
 <!--Legal Information at https://www.zzeroo.com/contact-->
 
 <head>
+  {% block head %}
   <meta charset="utf-8">
-  <title>zzeroo.com</title>
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
   <meta name="description" content="Homepage von 'Stefan Müller - Hard.- und Software Entwicklung'">
   <meta name="keywords" content="Stefan, Müller, Stefan Müller, zzeroo, oorezz">
   <meta name="author" content="Stefan Müller">
   <meta name="generator" content="github.com/zzeroo/zzeroo.com">
   <link href="/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width">
+  {% endblock head %}
 </head>
 <body>
   <div class="navbar">
