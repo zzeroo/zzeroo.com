@@ -1,8 +1,9 @@
 +++
 title = "Manage dot files in a git repo"
-date = 2019-10-10
+date = 2000-01-01
 draft = true
 +++
+
 
 <https://news.ycombinator.com/item?id=11071754>
 

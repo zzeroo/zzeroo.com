@@ -1,6 +1,7 @@
 +++
 title = "What's next after shebang?"
 date = 2019-10-07
+draft = true
 +++
 
 ## `set -e`
